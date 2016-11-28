@@ -1,6 +1,6 @@
 # commander-pojo
 
-extract your parsed [commander.js](https://github.com/tj/commander.js) instance into a pojo.
+transform your parsed [commander.js](https://github.com/tj/commander.js) instance into a [pojo](https://en.wikipedia.org/wiki/Plain_Old_Java_Object)
 
 [ ![Codeship Status for cdaringe/commander-pojo](https://app.codeship.com/projects/b340eb00-973d-0134-4e2b-76a8c82e6885/status?branch=master)](https://app.codeship.com/projects/187024) ![](https://img.shields.io/badge/standardjs-%E2%9C%93-brightgreen.svg) [![Coverage Status](https://coveralls.io/repos/github/cdaringe/commander-pojo/badge.svg?branch=master)](https://coveralls.io/github/cdaringe/commander-pojo?branch=master)
 
