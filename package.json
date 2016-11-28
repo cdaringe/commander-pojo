@@ -4,7 +4,7 @@
   "description": "turn Commander instances into POJOs of user selected options",
   "main": "src/index.js",
   "scripts": {
-    "validate": "npm ls && ripcord counsel check",
+    "validate": "yarn ls && ripcord counsel check",
     "secure": "nsp check",
     "lint": "standard",
     "check-coverage": "nyc check-coverage --lines 90 --functions 90 --branches 90",
