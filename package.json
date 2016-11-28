@@ -1,0 +1,50 @@
+{
+  "name": "commander-pojo",
+  "version": "0.0.1",
+  "description": "turn Commander instances into POJOs of user selected options",
+  "main": "src/index.js",
+  "scripts": {
+    "validate": "npm ls && ripcord counsel check",
+    "secure": "nsp check",
+    "lint": "standard",
+    "check-coverage": "nyc check-coverage --lines 90 --functions 90 --branches 90",
+    "docs": "ripcord docs",
+    "docs-publish": "ripcord docs --publish",
+    "postpublish": "npm run docs-publish",
+    "preversion": "git checkout master && git pull",
+    "publish-patch": "npm run preversion && npm version patch && git push origin master --tags && npm publish",
+    "publish-minor": "npm run preversion && npm version minor && git push origin master --tags && npm publish",
+    "publish-major": "npm run preversion && npm version major && git push origin master --tags && npm publish",
+    "check-licenses": "ripcord licenses check",
+    "test": "nyc --reporter=lcov node test/index.js --test-flag test-cmd blah"
+  },
+  "author": "cdaringe",
+  "license": "MIT",
+  "devDependencies": {
+    "commander": "^2.9.0",
+    "coveralls": "^2.11.15",
+    "nsp": "^2.6.2",
+    "nyc": "^10.0.0",
+    "ripcord": "^0.9.1",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "pre-commit": [
+    "validate",
+    "lint",
+    "test",
+    "check-coverage",
+    "check-licenses",
+    "secure",
+    "docs"
+  ],
+  "keywords": [
+    "commander",
+    "commander.js",
+    "pojo",
+    "plain",
+    "old",
+    "javascript",
+    "object"
+  ]
+}
